@@ -1,0 +1,105 @@
+@import url('https:// fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+nav .logo{
+    font-size: 33px;
+    color: black;
+    font-weight: 600;
+    display: flex;
+    gap: 10px;
+}
+
+nav{
+    height: 80px;
+    background:rgb(169, 182, 222);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  0px 50px 0px 100px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;  
+}
+nav ul li{
+    margin: 0px 15px;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    /* letter-spacing: 1px; */
+    /* padding: 8px 10px;
+    border: 5px; */
+    transition: all 0.3s ease;
+}
+ nav ul li a.active, nav ul li a:hover{
+    color: #FF5400;
+    /* background-color: aliceblue; */
+ }
+  /* menue icon  */
+ nav .menu-btn i{
+    color: rgb(24, 16, 16);
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+ }
+
+ #click{
+    display: none;
+ }
+ 
+ /* medium size */
+ @media (max-width: 940px) {
+    /* menu bar tag  */
+    nav .logo{
+        font-size: 20px;
+        font-weight: 600;
+        align-items: center;
+        justify-content: left;
+        
+        
+    }
+    
+    nav .menu-btn i{
+        display: block;
+    }
+    #click:checked ~ .menu-btn i:before{
+        content: "\f00d";
+
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background:#6da3f4;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    #click:checked ~ ul{
+        left: 0%;
+     }
+    nav ul li{
+        margin: 40px 0px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        display: block;
+    }
+
+    nav ul li a:hover, nav ul li a.active{
+        color: #FF5400;
+        background: none;
+    }
+    
+
+ }
