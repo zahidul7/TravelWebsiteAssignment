@@ -15,7 +15,7 @@ nav .logo{
 
 nav{
     height: 80px;
-    background:rgb(169, 182, 222);
+    /* background:rgb(169, 182, 222); */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -80,7 +80,7 @@ nav ul li a:hover{
         position: fixed;
         top: 80px;
         left: -100%;
-        background:#6da3f4;
+        /* background:#6da3f4; */
         height: 100vh;
         width: 100%;
         display: block;
