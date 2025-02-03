@@ -39,7 +39,7 @@ nav ul li a{
     border: 5px; */
     transition: all 0.3s ease;
 }
- nav ul li a.active, nav ul li a:hover{
+nav ul li a:hover{
     color: #FF5400;
     /* background-color: aliceblue; */
  }
@@ -62,11 +62,13 @@ nav ul li a{
         font-size: 20px;
         font-weight: 600;
         align-items: center;
-        justify-content: left;
-        
-        
+        justify-content: left; 
     }
-    
+    nav{
+        justify-content: space-between;
+        padding-inline: 25px;
+    }
+
     nav .menu-btn i{
         display: block;
     }
@@ -96,10 +98,9 @@ nav ul li a{
         display: block;
     }
 
-    nav ul li a:hover, nav ul li a.active{
+    nav ul li a:active,nav ul li a:hover{
         color: #FF5400;
-        background: none;
+        
     }
-    
 
  }
