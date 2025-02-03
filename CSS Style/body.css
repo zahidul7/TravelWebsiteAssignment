@@ -60,13 +60,64 @@
     background: #e64a19;
 }
 
-@media (max-width:960px){
+@media screen and (max-width: 768px) {
     .centered{
-        text-align: center;
-        position: absolute;
-        /* top: 50%;
-        left: 50%; */
-        /* transform: translate(-50%, -50%); */
-        width: 10%;
+        border: 1px solid red;
+        align-items: center;
+    }
+    .search-container {
+        position: fixed;
+        display: table;
+        
+    }
+    .Explore-content-header{
+        font-size: 25px;
+        color: #FFFFFF;
+    }
+    .explore-paragraph{
+        font-size: 10px;
+        color: #FFFFFF;
+        padding-bottom: 15px;
+    }
+    .im-size{
+        width: 90%;
+        height: 500px;
+    }
+
+    .search-container h2 {
+        font-size: 10px;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .search-container p {
+        font-size: 14px;
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    .search-container input,
+    .search-container select {
+        width: 100%;
+        padding: 1px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+
+    .search-button {
+        width: 100%;
+        background: #ff5722;
+        color: white;
+        padding: 12px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .search-button:hover {
+        background: #e64a19;
     }
 }
