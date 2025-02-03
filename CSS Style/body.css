@@ -66,8 +66,12 @@
         align-items: center;
     }
     .search-container {
-        position: fixed;
+        width: 40%;
+        position: relative;
+        text-align: center;
+        /* position: fixed; */
         display: table;
+        
         
     }
     .Explore-content-header{
@@ -85,12 +89,14 @@
     }
 
     .search-container h2 {
+      
         font-size: 10px;
         color: white;
         margin-bottom: 10px;
     }
 
     .search-container p {
+
         font-size: 14px;
         color: white;
         margin-bottom: 20px;
@@ -110,7 +116,6 @@
         width: 100%;
         background: #ff5722;
         color: white;
-        padding: 12px;
         border: none;
         border-radius: 8px;
         font-size: 16px;
